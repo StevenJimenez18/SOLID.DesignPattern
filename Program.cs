@@ -6,39 +6,30 @@ using System.Threading.Tasks;
 
 namespace SingleResponsbilityPrinciple
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to my application!");
+            // Welcome Message for user
+            StandardMessages.WelcomeMessage();
 
-            //Ask fo user information
-            Person user = new Person();
+            // Ask for user information
+            Person user = PersonDataCapture.Capture();
 
-            Console.Write("What is your first name: ");
-            user.FirstName = Console.ReadLine();
+            // Checks to be sure if the first and last names are valid
+            bool isUserValid = PersonValidator.Validate(user);
 
-            Console.Write("What is your last name: ");
-            user.LastName = Console.ReadLine();
-
-            //Checks to be sure if the first and last names are valid
-            if (string.IsNullOrWhiteSpace(user.FirstName))
+            if(isUserValid == false)
             {
-                Console.WriteLine("You did not give us a valid first name!");
-                Console.ReadLine();
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(user.LastName))
-            {
-                Console.WriteLine("You did not give us a valid last name!");
-                Console.ReadLine();
+                StandardMessages.EndApplication();
                 return;
             }
 
             // Creates a username for the user
-            Console.WriteLine($"Your username is { user.FirstName.Substring(0, 1)}{ user.LastName }");
+            AccountGenerator.CreateAccount(user);
 
-            Console.ReadLine();
+            // Ending message for user
+            StandardMessages.EndApplication();
         }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\bin\Debug\SingleResponsbilityPrinciple.exe.config
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\bin\Debug\SingleResponsbilityPrinciple.exe
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\bin\Debug\SingleResponsbilityPrinciple.pdb
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\obj\Debug\SingleResponsbilityPrinciple.csprojAssemblyReference.cache
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\obj\Debug\SingleResponsbilityPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\obj\Debug\SingleResponsbilityPrinciple.exe
+C:\Users\Steven\Source\Repos\SOLID.DesignPattern\obj\Debug\SingleResponsbilityPrinciple.pdb

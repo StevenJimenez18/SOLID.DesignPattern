@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SingleResponsbilityPrinciple
 {
-    class Person
+    public class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
